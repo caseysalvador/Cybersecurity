@@ -30,6 +30,6 @@ mem_dc.BitBlt((0,0), (width, height), img_dc, (left, top), win32con.SRCCOPY)
 # save the bitmap to a file
 screenshot.SaveBitmapFile(mem_dc, 'C:\\WINDOWS\\Temp\\screenshot.bmp')
 
-# Fee our objects
+# Free our objects
 mem_dc.DeleteDC()
 win32gui.DeleteObject(screenshot.GetHandle())
