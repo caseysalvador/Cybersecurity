@@ -5,7 +5,7 @@ $LOG_FILE = "C:\Windows\Temp\desktop.log"
 # Create New User
     # add admin rights
 $userName = "tempUser"
-$passWord = "Password1!Password1!"
+$passWord = ConvertTo-SecureString "Password1!" -AsPlainText -Force
 $fullName = "temp user"
 $description = "temp user"
 New-LocalUser -Name $userName -Password $passWord -FullName $fullName -Description $description
